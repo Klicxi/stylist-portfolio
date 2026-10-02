@@ -1223,13 +1223,39 @@ body.modal-open { overflow: hidden; }
   .intro-quote p { font-size: 30px; }
 }
 
-/* A single service-format label and quieter Russian headings. */
+/* Russian identity and individual service formats. */
 h2 { font-size: clamp(46px, 6.1vw, 88px); }
-.service-item { grid-template-columns: 50px minmax(0, 1fr); }
-.services .section-topline { align-items: center; }
-.service-mode { display: inline-flex; flex-shrink: 0; align-items: center; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); font-size: 14px; line-height: 1.4; white-space: nowrap; }
+.brand { min-width: 0; font-size: 17px; line-height: 1.35; letter-spacing: 0; font-weight: 600; }
+.brand .brand-role { color: var(--ink); }
+.site-header { gap: 24px; }
+.menu-toggle { flex-shrink: 0; }
+.hero h1 { font-size: clamp(44px, 5vw, 68px); }
+.hero-meta { justify-content: flex-end; }
+.service-item { grid-template-columns: 50px minmax(0, 1fr) auto; }
+.service-format { font-size: 14px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; line-height: 1.4; }
+.manifesto h2 { font-size: clamp(46px, 6.4vw, 92px); }
+.work-info { flex-wrap: wrap; }
+.work-info > div { min-width: 0; }
+.work-info > p { max-width: 140px; font-size: 12px; line-height: 1.45; }
+@media (min-width: 901px) and (max-width: 1150px) {
+  .brand { max-width: 275px; }
+  .desktop-nav { gap: 16px; }
+}
+@media (max-width: 900px) {
+  .hero h1 { font-size: clamp(44px, 7.3vw, 68px); }
+  .service-item { grid-template-columns: 38px minmax(0, 1fr); }
+  .service-format { grid-column: 2; justify-self: start; }
+}
 @media (max-width: 640px) {
   h2 { font-size: clamp(40px, 11.4vw, 66px); }
+  .brand { max-width: calc(100% - 72px); font-size: 16px; }
+  .brand .brand-role { display: block; font-size: 14px; font-weight: 400; }
+  .site-header { gap: 16px; padding-block: 8px; }
+  .hero h1 { font-size: clamp(36px, 10.9vw, 60px); }
+  .hero-copy { padding-top: 4px; }
   .service-item { grid-template-columns: 28px minmax(0, 1fr); }
-  .services .section-topline { align-items: flex-start; flex-wrap: wrap; gap: 14px; }
+  .service-format { margin-top: 8px; }
+  .work-info { display: block; }
+  .work-info > p { max-width: none; text-align: left; margin-top: 10px; }
+  .manifesto h2 { font-size: clamp(28px, 7.5vw, 48px); }
 }
