@@ -1222,3 +1222,14 @@ body.modal-open { overflow: hidden; }
   .work-info>p { text-align: left; margin-top: 10px; }
   .intro-quote p { font-size: 30px; }
 }
+
+/* A single service-format label and quieter Russian headings. */
+h2 { font-size: clamp(46px, 6.1vw, 88px); }
+.service-item { grid-template-columns: 50px minmax(0, 1fr); }
+.services .section-topline { align-items: center; }
+.service-mode { display: inline-flex; flex-shrink: 0; align-items: center; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); font-size: 14px; line-height: 1.4; white-space: nowrap; }
+@media (max-width: 640px) {
+  h2 { font-size: clamp(40px, 11.4vw, 66px); }
+  .service-item { grid-template-columns: 28px minmax(0, 1fr); }
+  .services .section-topline { align-items: flex-start; flex-wrap: wrap; gap: 14px; }
+}
