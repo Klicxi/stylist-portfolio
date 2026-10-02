@@ -1076,3 +1076,149 @@ h2 em {
     transform: none;
   }
 }
+
+/* Tatiana — retain the original editorial layout, with real photographs. */
+html { scroll-padding-top: 100px; }
+body { font-size: 16px; }
+h1,h2 { line-height: 1.02; letter-spacing: -.04em; }
+h1 { font-size: clamp(48px, 5.4vw, 78px); }
+h2 { font-size: clamp(48px, 6.6vw, 96px); }
+.brand { font-size: 18px; }
+.desktop-nav a { font-size: 14px; letter-spacing: .04em; padding-block: 18px; }
+.hero { grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr); min-height: auto; gap: 26px 48px; padding-top: 30px; padding-bottom: 100px; }
+.hero-visual { min-height: 0; aspect-ratio: .82; }
+.photo-frame { overflow: hidden; background: var(--paper-2); }
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+.hero-visual img { object-position: center 70%; }
+.hero-copy { min-width: 0; padding-bottom: 18px; }
+.hero-description { font-size: 16px; }
+.hero-work-link { display: block; width: fit-content; font-size: 14px; margin-top: 20px; padding-block: 8px; border-bottom: 1px solid var(--line); }
+.hero-meta,.eyebrow,.section-label,.section-topline>p,.intro-quote small,.work-number,.work-info>p,.site-footer,.mobile-menu p { font-size: 12px; }
+.hero-meta { flex-wrap: wrap; gap: 12px; }
+.eyebrow { letter-spacing: .1em; }
+.button { min-height: 48px; font-size: 14px; letter-spacing: .03em; justify-content: center; padding: 16px 22px; }
+.text-link { font-size: 14px; letter-spacing: .02em; background: transparent; color: inherit; border: 0; border-bottom: 1px solid currentColor; cursor: pointer; min-height: 44px; text-align: left; padding: 10px 0; }
+.intro,.works,.services,.about-person { padding-top: clamp(64px,8vw,120px); padding-bottom: clamp(64px,8vw,120px); }
+.intro-grid { padding-top: 54px; gap: 7vw; }
+.intro-text p,.person-copy p:not(.eyebrow) { font-size: 16px; }
+.intro-text .lead { font-size: 28px; }
+.intro-gallery { margin-top: 66px; grid-template-columns: .7fr 1fr; }
+.portrait-photo { aspect-ratio: .78; }
+.intro-quote p { font-size: clamp(30px,3.5vw,48px); line-height: 1.12; letter-spacing: -.03em; }
+.person-photo { aspect-ratio: .78; }
+.person-copy .lead { font-size: 25px !important; }
+.works-heading { margin-top: 54px; margin-bottom: 54px; }
+.works-heading p { font-size: 16px; }
+.image-button { display: block; width: 100%; border: 0; padding: 0; cursor: zoom-in; background: #fff; color: inherit; }
+.work-image { aspect-ratio: 3 / 4; }
+.work-image img { width: 100%; height: 100%; object-fit: contain; }
+.work-card--wide { grid-column: 2 / 8; }
+.work-card--small { grid-column: 9 / 13; margin-top: 100px; }
+.work-info { padding-top: 16px; margin-top: 16px; gap: 12px; }
+.work-info h3 { font-size: clamp(22px,2vw,28px); }
+.work-info>p { letter-spacing: .04em; font-size: 12px; }
+.manifesto-inner { min-height: 560px; padding-block: 90px; }
+.manifesto h2 { font-size: clamp(56px,9vw,130px); }
+.manifesto-inner>p:last-child { font-size: 16px; max-width: 420px; color: #d4cac3; }
+.services-heading { margin: 54px 0; }
+.service-item { grid-template-columns: 50px minmax(0,1fr) auto; min-height: 138px; }
+.service-item:hover { padding-inline: 0; }
+.service-main h3 { font-size: clamp(28px,3vw,42px); line-height: 1.15; }
+.service-main p { font-size: 16px; }
+.service-number { font-size: 12px; }
+.service-format { color: var(--accent); font-size: 14px; white-space: nowrap; }
+.reviews { padding-block: clamp(64px,8vw,120px); background: var(--paper-2); }
+.reviews-heading { margin-top: 54px; }
+.reviews-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 36px 60px; }
+.review-card { display: flex; flex-direction: column; align-items: flex-start; padding: 26px 0 12px; border-top: 1px solid var(--line); }
+.review-type { color: var(--accent); font-size: 14px; }
+.review-card blockquote { margin: 20px 0 24px; font-family: var(--serif); font-size: clamp(25px,2.4vw,34px); line-height: 1.25; letter-spacing: -.02em; }
+.review-card .text-link { margin-top: auto; }
+.contact-inner { min-height: 620px; padding-block: 90px; }
+.contact h2 { font-size: clamp(52px,9vw,130px); }
+.contact-text { font-size: 16px; color: #f0dfdb; }
+.contact .eyebrow { color: #e2c4be; }
+.social-links { display: flex; flex-wrap: wrap; gap: 12px 26px; margin-top: 30px; font-size: 14px; }
+.social-links a { padding-block: 10px; border-bottom: 1px solid rgba(248,245,240,.4); }
+.site-footer { letter-spacing: .04em; }
+.site-footer a { padding-block: 12px; }
+.skip-link { position: fixed; z-index: 200; top: 10px; left: 10px; padding: 14px 20px; background: var(--dark); color: var(--white); transform: translateY(-150%); }
+.skip-link:focus { transform: translateY(0); }
+.mobile-menu { visibility: hidden; pointer-events: none; }
+.mobile-menu.is-open { visibility: visible; pointer-events: auto; }
+.mobile-menu nav { gap: 12px; }
+.mobile-menu nav a { line-height: 1.15; padding-block: 8px; }
+.menu-toggle { width: 48px; height: 48px; }
+body.modal-open { overflow: hidden; }
+.image-dialog { width: min(1060px, calc(100vw - 36px)); max-height: calc(100dvh - 36px); border: 0; padding: 20px; background: var(--paper); color: var(--ink); }
+.image-dialog::backdrop { background: rgba(20,15,13,.88); }
+.dialog-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
+.dialog-toolbar p { margin: 0; font-size: 14px; }
+.dialog-close { flex-shrink: 0; border: 1px solid var(--line); padding: 10px 14px; min-height: 44px; background: transparent; color: var(--ink); cursor: pointer; }
+.dialog-close span { font-size: 22px; vertical-align: middle; margin-left: 12px; }
+.dialog-image-wrap { display: flex; justify-content: center; }
+.dialog-image { max-height: calc(100dvh - 160px); width: auto; max-width: 100%; height: auto; object-fit: contain; }
+.contact :focus-visible,.mobile-menu :focus-visible { outline-color: var(--white); }
+@media(min-width:901px) and (max-width:1150px) {
+  .hero { gap: 26px; }
+  h1 { font-size: 5.5vw; }
+  .desktop-nav { gap: 20px; }
+}
+@media(max-width:900px) {
+  .hero { grid-template-columns: minmax(0,1fr); }
+  .hero-visual { min-height: 0; aspect-ratio: .9; max-height: 760px; }
+  .hero-copy { padding-top: 14px; }
+  h1 { font-size: clamp(54px,9vw,78px); }
+  .intro-grid,.person-grid { gap: 35px; }
+  .intro-quote { padding-bottom: 0; }
+  .work-card--offset { grid-column: 9 / 13; margin-top: 60px; }
+  .work-card--wide { grid-column: 1 / 8; }
+  .work-card--small { grid-column: 9 / 13; margin-top: 60px; }
+  .work-info { display: block; }
+  .work-info>p { text-align: left; margin-top: 10px; }
+}
+@media(max-width:640px) {
+  html { scroll-padding-top: 84px; }
+  :root { --pad: 20px; }
+  .hero { gap: 20px; padding-top: 20px; padding-bottom: 64px; }
+  .hero-visual { min-height: 0; max-height: none; aspect-ratio: .9; }
+  .hero-copy { padding-top: 4px; }
+  .hero-meta { font-size: 12px; letter-spacing: .06em; }
+  h1 { font-size: clamp(42px,12.4vw,74px); }
+  h2 { font-size: clamp(42px,12.2vw,72px); }
+  .intro,.works,.services,.reviews,.about-person { padding-block: 64px; }
+  .intro-grid,.person-grid { padding-top: 36px; }
+  .intro-text { margin-top: 28px; }
+  .intro-gallery { margin-top: 40px; padding-top: 0; }
+  .intro-quote { margin-top: 36px; }
+  .intro-quote p { font-size: 34px; }
+  .works-heading,.services-heading { margin-block: 36px; }
+  .works-heading p { margin-top: 20px; }
+  .work-card { margin-bottom: 40px !important; }
+  .work-info { display: flex; }
+  .work-info>p { text-align: right; margin-top: 5px; font-size: 12px; }
+  .work-info h3 { font-size: 25px; }
+  .manifesto-inner { min-height: 410px; padding-block: 64px; }
+  .manifesto h2 { font-size: clamp(44px,12vw,72px); }
+  .service-item { grid-template-columns: 28px minmax(0,1fr); gap: 10px; padding-block: 24px; min-height: 0; }
+  .service-number { align-self: start; padding-top: 7px; }
+  .service-main h3 { font-size: 29px; overflow-wrap: break-word; }
+  .service-main p { font-size: 16px; }
+  .service-format { grid-column: 2; margin-top: 5px; }
+  .reviews-heading { margin-top: 36px; }
+  .reviews-grid { grid-template-columns: minmax(0,1fr); gap: 24px; }
+  .review-card blockquote { font-size: 28px; }
+  .person-copy { margin-top: 36px; }
+  .contact-inner { min-height: 0; padding-block: 72px; }
+  .contact h2 { font-size: clamp(42px,11.7vw,70px); }
+  .contact-actions .button { width: 100%; }
+  .social-links { gap: 12px 22px; }
+  .image-dialog { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); padding: 12px; }
+  .dialog-toolbar p { font-size: 12px; }
+  .dialog-close { font-size: 14px; padding: 8px; }
+}
+@media(max-width:359px) {
+  .work-info { display: block; }
+  .work-info>p { text-align: left; margin-top: 10px; }
+  .intro-quote p { font-size: 30px; }
+}
